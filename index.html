@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task site</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/pages/index.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/84076286e9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="nav">
+                <a href="#" class="nav_logo">
+                    <img src="./assets/images/Logo.svg" alt="Brend logotipi">
+                </a>
+                <ul class="nav_menu">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-list"></i>Все предложения</a>
+                    </li>
+                    <li>
+                        <a href="#">Скидки</a>
+                    </li>
+                    <li>
+                        <a href="#">Акции</a>
+                    </li>
+                    <li>
+                        <a href="#">Промокоды</a>
+                    </li>
+                    <li>
+                        <a href="#">Кешбэк</a>
+                    </li>
+                </ul>
+                <div class="nav_notif">
+                    <div aria-label="Qidirish">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="dn-800">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </div>
+                    <div class="dn-800" aria-label="Profil">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                    <div aria-label="Py">
+                        Py
+                    </div>
+                    <div class="mobile-btn" id="toggle-nav">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <button class="btn">
+                        Добавить скидку
+                        <span></span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="mobile-nav" id="mobile-nav">
+        <button id="close-nav">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <ul class="nav_menu">
+            <li>
+                <a href="#">Все предложения</a>
+            </li>
+            <li>
+                <a href="#">Скидки</a>
+            </li>
+            <li>
+                <a href="#">Акции</a>
+            </li>
+            <li>
+                <a href="#">Промокоды</a>
+            </li>
+            <li>
+                <a href="#">Кешбэк</a>
+            </li>
+        </ul>
+        <button class="btn">
+            Добавить скидку
+            <span></span>
+        </button>
+    </div>
+    <div class="container main-container">
+        <aside>
+            <div class="aside_title">23 предложения</div>
+            <div class="row" id="cardContainer">
+
+            </div>
+            <button class="btn bg-white">Показать все <span></span></button>
+        </aside>
+        <main>
+            <div class="main_card">
+                <div class="main_card_title">Топовые скидки</div>
+                <div class="bredcrams">
+                    <button class="active">Питание</button>
+                    <button>Связь</button>
+                    <button>Магазины</button>
+                </div>
+                <div id="mainContainer" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list"></ul>
+                    </div>
+                </div>
+            </div>
+            <div class="welcome">
+                <div class="welcome-title">
+                    Добро пожаловать на сайт
+                </div>
+                <div class="title">
+                    Ваш надёжный помощник в поиске лучших скидок и акций различных компаний!
+                </div>
+                <div class="text">
+                    Мы собрали для вас все самые выгодные предложения, чтобы вы могли сэкономить свои деньги и получить
+                    максимум удовольствия от покупок.
+                </div>
+                <div class="text">
+                    Развернуть текст
+                </div>
+            </div>
+            <div class="faq">
+                <div class="faq_title">
+                    FAQ
+                </div>
+                <div class="faq_box active">
+                    <div id="faq_box">
+                        <div class="faq_box_title">
+                            Какие компании представлены на сайте?
+                        </div>
+                        <button class="faq_box_plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="faq_show">
+                        <div class="faq_show_text">
+                            Чтобы быть в курсе новых скидок и акций на сайте, вы можете подписаться
+                            на наш <span>телеграм-канал</span> или следить за новостями.
+                        </div>
+                        <div class="faq_show_text">
+                            Мы регулярно отправляем информацию о новых предложениях и акциях нашим подписчикам,
+                            чтобы они всегда могли быть в курсе последних скидок и эксклюзивных предложений.
+                        </div>
+                        <div class="faq_show_text">
+                            Также можно регулярно посещать сайт и проверять разделы с акциями и скидками
+                        </div>
+                    </div>
+                </div>
+                <div class="faq_box">
+                    <div id="faq_box">
+                        <div class="faq_box_title">
+                            Как я могу быть в курсе новых скидок и акций на сайте?
+                        </div>
+                        <button class="faq_box_plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="faq_show">
+                        <div class="faq_show_text">
+                            Чтобы быть в курсе новых скидок и акций на сайте, вы можете подписаться
+                            на наш <span>телеграм-канал</span> или следить за новостями.
+                        </div>
+                        <div class="faq_show_text">
+                            Мы регулярно отправляем информацию о новых предложениях и акциях нашим подписчикам,
+                            чтобы они всегда могли быть в курсе последних скидок и эксклюзивных предложений.
+                        </div>
+                        <div class="faq_show_text">
+                            Также можно регулярно посещать сайт и проверять разделы с акциями и скидками
+                        </div>
+                    </div>
+                </div>
+                <div class="faq_box">
+                    <div id="faq_box">
+                        <div class="faq_box_title">
+                            Могу ли я поделиться найденными скидками и акциями с друзьями?
+                        </div>
+                        <button class="faq_box_plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+                    <div class="faq_show">
+                        <div class="faq_show_text">
+                            Чтобы быть в курсе новых скидок и акций на сайте, вы можете подписаться
+                            на наш <span>телеграм-канал</span> или следить за новостями.
+                        </div>
+                        <div class="faq_show_text">
+                            Мы регулярно отправляем информацию о новых предложениях и акциях нашим подписчикам,
+                            чтобы они всегда могли быть в курсе последних скидок и эксклюзивных предложений.
+                        </div>
+                        <div class="faq_show_text">
+                            Также можно регулярно посещать сайт и проверять разделы с акциями и скидками
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

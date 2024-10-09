@@ -1,0 +1,349 @@
+@import "./color.css";
+
+@font-face {
+  font-family: 'Play';
+  src: url('fonts/Play-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Play';
+  src: url('fonts/Play-Bold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Play', sans-serif;
+}
+
+body {
+  font-family: 'Play', sans-serif;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.d-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  text-align: center;
+  padding: 14px 20px;
+  padding-right: 30px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: var(--red-color);
+  color: var(--text-white);
+  cursor: pointer;
+  font-family: 'Play';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  position: relative;
+ 
+
+  & span {
+    position: absolute;
+    top: 37%;
+    right: -7px;
+    background-color: #607282;
+    width: 16px;
+    height: 16px;
+    border: 3px solid white;
+    border-radius: 50%;
+  }
+
+  &:hover {
+    background: #c00420;
+  }
+
+  &.bg-white{
+    background: white;
+    color: #333;
+    &:hover{
+      background: var(--primary-color);
+      color: white;
+    }
+  }
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.text {
+  font-family: 'Play';
+  font-weight: 400;
+  font-size: 14px;
+  color: #607282;
+
+}
+
+.title {
+  font-weight: bold;
+  font-family: 'Play';
+  font-style: normal;
+  font-size: 18px;
+  color: #001C1C;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.col {
+  flex: 0 0 auto;
+  padding: 15px;
+}
+
+.mt-a {
+  margin-top: auto;
+}
+
+@media (min-width: 1920px) {
+  .col-lg-1 {
+    width: 8.33%;
+  }
+
+  .col-lg-2 {
+    width: 16.67%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.67%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.67%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.67%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1919px) and (min-width: 1200px) {
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-2 {
+    width: 16.67%;
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.67%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.67%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.67%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1199px) and (min-width: 768px) {
+  .col-sm-1 {
+    width: 8.33%;
+  }
+
+  .col-sm-2 {
+    width: 16.67%;
+  }
+
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  .col-sm-4 {
+    width: 33.33%;
+  }
+
+  .col-sm-5 {
+    width: 41.67%;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  .col-sm-7 {
+    width: 58.33%;
+  }
+
+  .col-sm-8 {
+    width: 66.67%;
+  }
+
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  .col-sm-10 {
+    width: 83.33%;
+  }
+
+  .col-sm-11 {
+    width: 91.67%;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+  .container{
+    max-width: 1000px;
+  }
+}
+
+@media (max-width:810px) {
+  .container{
+    max-width: 780px;
+  }
+}
+
+@media (max-width: 767px) {
+  .col-xs-1 {
+    width: 50%;
+  }
+
+  .col-xs-2 {
+    width: 50%;
+  }
+
+  .col-xs-3 {
+    width: 100%;
+  }
+
+  .col-xs-4 {
+    width: 100%;
+  }
+
+  .col-xs-5 {
+    width: 100%;
+  }
+
+  .col-xs-6 {
+    width: 100%;
+  }
+
+  .col-xs-7 {
+    width: 100%;
+  }
+
+  .col-xs-8 {
+    width: 100%;
+  }
+
+  .col-xs-9 {
+    width: 100%;
+  }
+
+  .col-xs-10 {
+    width: 100%;
+  }
+
+  .col-xs-11 {
+    width: 100%;
+  }
+
+  .col-xs-12 {
+    width: 100%;
+  }
+  .container{
+    max-width: 97%;
+  }
+}
