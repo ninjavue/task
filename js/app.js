@@ -202,8 +202,20 @@ function renderMain() {
         interval: 2000,
         arrows: true,
         breakpoints: {
-        640: {
-            perPage: 1.3,
+        1150: {
+            perPage: 2.3,
+        },
+        1050: {
+            perPage: 2.3,
+        },
+        700:{
+            perPage: 2
+        },
+        600: {
+            perPage: 1.6,
+        },
+        500: {
+            perPage: 1.5,
         },
         460: {
             perPage: 1,
@@ -231,14 +243,24 @@ faqBoxes.forEach(faqBox => {
 })
 
 
-const toggleNav = document.getElementById('toggle-nav');
-const mobileNav = document.getElementById('mobile-nav');
-const closeNav = document.getElementById('close-nav');
+const toggleNav = document.getElementById('toggle-nav')
+const mobileNav = document.getElementById('mobile-nav')
+const closeNav = document.getElementById('close-nav')
+const overlay = document.getElementById('overlay')
 
 toggleNav.addEventListener('click', () => {
-    mobileNav.classList.toggle('active'); // "active" klassini o'zgartirish
+    mobileNav.classList.toggle('active');
+    overlay.classList.toggle('active');
 });
 
 closeNav.addEventListener('click', () => {
-    mobileNav.classList.remove('active'); // Oynani yopish
-});
+    mobileNav.classList.remove('active')
+    overlay.classList.remove('active')
+})
+
+document.addEventListener('click', (event) => {
+    if (!mobileNav.contains(event.target) && !toggleNav.contains(event.target)) {
+        mobileNav.classList.remove('active')
+        overlay.classList.remove('active')
+    }
+})
